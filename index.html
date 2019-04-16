@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--materialize css-->
+  <!--http://materializecss.com/getting-started.html-->
+    <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <!--font awesome cdn-->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <!---->
+  <title>Document</title>
+</head>
+<body>
+  <div id="container">
+    <div class="row">
+      <div class="col s12">
+          <div id="main" class="card">
+            <div class="card-content">
+              <span class="card-title">Task List</span>
+                <div class="row">
+                  <!--query selectors here #task-form-->
+                  <form id="task-form">
+                
+                    <div class="input-field col s12">
+                       <!--query selectors here #task-->
+                      <input type="text" name="task" id="task">
+                       
+                        <label for="task">New Task</label>
+                    </div>
+                    <input type="submit" value="Add Task" class="btn">
+                  </form>
+
+                </div>
+            </div>
+          </div><!--card end-->
+          <div class="card-action">
+            <h5 class="task-title">
+              <!---->
+              <div class="input-field col s12">
+                 <!--query selectors here #filter-->
+                  <input type="text" name="filter" id="filter">
+                 
+                    <label for="filter">Filter Tasks</label>
+                </div>
+                <!--query selectors here .collection-->
+                <ul class="collection">
+                  <!--query selectors here .clear-tasks-->
+                  <a href="#" class="clear-tasks btn black">Clear Tasks</a>
+                </ul>
+  
+              <!---->
+            </h5>
+          </div>
+        </div>
+      </div>
+  </div>
+
+
+
+   <!--jquery cdn-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!--materialize js-->
+     <!-- Compiled and minified JavaScript -->
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <!---->
+  <script src="js/app.js"></script>
+</body>
+</html>
